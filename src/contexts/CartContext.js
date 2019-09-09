@@ -1,5 +1,5 @@
 //Import creatContext
-import { creatContext } from "react";
+import { createContext } from "react";
 
 //create and export product context object
 export const CartContext = createContext();
