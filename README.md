@@ -86,15 +86,16 @@ Before you get started, please take a few minutes and get acquainted with this a
 <Route exact path="/" component={Products} />
 ```
 
-- After refactoring you'll notice a few errors... Don't worry we'll clean those up shortly!
+- After refactoring you'll notice a few errors... Don't worry we'll clean those up shortly! x
 
 **STEP 3 - Consuming data with ProductContext**
 
-- Now that our `ProductContext` is now providing data we can finally consume it! To do so let's head over to our `Products` component and import the `useContext` hook as well as our `ProductContext`.
+- Now that our `ProductContext` is now providing data we can finally consume it! To do so let's head over to our `Products` component and import the `useContext` hook as well as our `ProductContext`. x
 
-- In the component, call the `useContext` hook and pass in the context object we want to use into it.
+- In the component, call the `useContext` hook and pass in the context object we want to use into it. x
 
 - When we do this, `useContext` is going to return value passed by our `ProductContext` Provider `value` prop. In our case we're getting back an object with two properties. A `products` property and a `addItem` property. We can go ahead and destructure those.
+  x
 
 ```js
 const { products, addItem } = useContext(ProductContext);

@@ -24,11 +24,7 @@ function App() {
         <Navigation cart={cart} />
 
         {/* Routes */}
-        <Route
-          exact
-          path="/"
-          render={() => <Products products={products} addItem={addItem} />}
-        />
+        <Route exact path="/" render={() => <Products products={products} />} />
 
         <Route path="/cart" render={() => <ShoppingCart cart={cart} />} />
       </div>
